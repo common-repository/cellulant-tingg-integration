@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*
+ * CSS utils
+ */
+.red-mood {
+    color: #e84d56;
+}
+
+.blue-mood {
+    color: #67cfed;
+}
+
+.pink-mood {
+    color: #ec84c6;
+}
+
+.purple-mood {
+    color: #5b548b;
+}
+
+.green-mood {
+    color: #50a95a;
+}
+
+.yellow-mood {
+    color: #ee9b24;
+}
+
+.bootstrap-lead-paragraph {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.display-inline-flex {
+    /*display: -webkit-inline-box;*/
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.flex-one {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.plugins-page-title {
+    padding: 0;
+    line-height: 48px;
+}
+
+.plugins-page-title > span {
+    font-size: 36px;
+    margin-left: 8px;
+    line-height: 48px;
+    display: inline-block;
+}
+
+/* Tingg plugin index page */
+#wordpress-tingg-checkout-welcome-page > header > ul > li {
+    font-size: 1rem;
+}
+
+#wordpress-tingg-checkout-welcome-page > header > ul > li > i.material-icons{
+    margin-right: 8px;
+}
+
+#integration-stepper {
+    padding-top: 16px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#integration-stepper-bar > .stepper-tab-item {
+    padding: 8px 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+#integration-stepper-bar > .stepper-tab-item > i.material-icons {
+    margin-right: 8px;
+}
+
+
+#integration-stepper-bar > .stepper-tab-item > span {
+    text-transform: capitalize;
+}
+
+#integration-stepper-bar > .stepper-tab-item::after {
+    bottom: 0;
+    height: 2px;
+    width: 36px;
+    position: absolute;
+
+    content: '';
+    border-radius: 1px;
+    background-color: transparent;
+    transition: all 400ms;
+}
+
+#integration-stepper-bar > .stepper-tab-item.active-step::after {
+    background-color: #e84d56;
+}
+
+#integration-stepper-content {
+    min-height: 200px;
+    padding: 16px 32px;
+
+    font-size: 1rem;
+    line-height: 1.6rem;
+    white-space: pre-wrap;
+}
+
+#integration-stepper-content #integration-keys > div {
+    padding: 16px;
+}
+
+/*Tingg plugin options page*/
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options {
+    padding-top: 16px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options > h2.nav-tab-wrapper {
+    border: 0;
+    padding: 0;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options a.nav-tab {
+    border: 0;
+    margin: 0;
+    outline: none;
+    position: relative;
+    background: transparent;
+
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options a.nav-tab:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options a.nav-tab::after {
+    bottom: 0;
+    height: 2px;
+    width: 36px;
+    position: absolute;
+
+    content: '';
+    border-radius: 1px;
+    background-color: transparent;
+    transition: all 400ms;
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options a.nav-tab.nav-tab-active::after {
+    background-color: #e84d56;
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-form-fields {
+    min-height: 200px;
+    padding: 16px 48px;
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-form-fields .tingg-wordpress-plugin-options-field {
+    border: 0;
+    width: 50%;
+    height: 42px;
+    outline: none;
+    line-height: 36px;
+    border-radius: 2px;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    -o-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-form-fields .tingg-wordpress-plugin-options-field:focus {
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#wordpress-tingg-checkout-options-page #tabbed-plugin-options-submit-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+#tabbed-plugin-options-submit-button p.submit {
+    margin: 0;
+    padding: 16px;
+}
